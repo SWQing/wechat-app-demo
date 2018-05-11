@@ -15,7 +15,7 @@ function formatNumber(n) {
   return n[1] ? n : '0' + n
 }
 
-var rootDocment = 'https://kwz.hztuen.com/wechat';
+var rootDocment = 'https:///wechat';
 function req(url, data, cb) {
   wx.request({
     url: rootDocment + url,

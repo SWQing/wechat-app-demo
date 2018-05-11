@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/bindPhone/bindPhone",
     "pages/index/index",
+    "pages/bindPhone/bindPhone",
     "pages/useGuide/useGuide",
     "pages/bindIdentity/bindIdentity",
     "pages/myEarnings/myEarnings",
