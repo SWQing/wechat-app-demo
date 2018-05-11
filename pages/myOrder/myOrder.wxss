@@ -1,0 +1,88 @@
+.tab {
+  height: 7vh;
+  display: flex;
+  position: relative;
+}
+.tab view {
+  width: 50vw;
+  color: #333133;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 10px 0;
+  border: 4rpx solid transparent; 
+  box-shadow: 0 4px 2px 0 rgba(165,165,165,0.10);
+}
+.tab view:first-of-type {
+  position: relative;
+}
+.line {
+  width: 2px;
+  background-color: #ececec;
+  height: 3vh;
+  position: absolute;
+  left: calc(50vw - 1px);
+  top: 2vh;
+}
+
+
+.tab .default {
+  border: 4rpx solid transparent;
+}
+.tab .active {
+  border-bottom: 4rpx solid #2ac163;
+}
+
+.using {
+  padding: 20rpx;
+  padding-bottom: 0;
+}
+.using-items {
+  box-shadow: 0 1px 10px 0 #ECECEC;
+  border-radius: 3px;
+  padding: 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.using-items .arrows image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 80rpx auto;
+}
+.using-items .message > view {
+  margin-bottom: 15rpx;
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  color: #333133;
+}
+.using-items .message > view:last-of-type {
+  margin-bottom: 35rpx;
+}
+.using-items .message .orderId {
+  margin-bottom: 35rpx;
+  display: flex;
+  align-items: center;
+}
+.using-items .orderId image {
+  width: 25rpx;
+  height: 45rpx;
+  margin-right: 15rpx;
+}
+.using-items .orderId view {
+  font-size: 25rpx;
+  color: #9b9b9b;
+  font-weight: 300;
+}
+.electric {
+  text-align: center;
+  padding: 30rpx;
+}
+.electric view:first-of-type {
+  font-size: 25rpx;
+  color: #9b9b9b;
+  font-weight: 300;
+  margin: 20rpx 0;
+}
+.electric view:last-of-type {
+  font-size: 46rpx;
+  color: #24AE46;
+}

@@ -1,0 +1,132 @@
+.container {
+  height: 100vw;
+  padding: 30rpx 3vw;
+}
+.my-money {
+  text-align: center;
+  position: relative;
+}
+.my-money .title {
+  color: #333133;
+  font-size: 32rpx;
+}
+.my-money .moneyNum {
+  margin: 10rpx 0;
+  font-size: 44rpx;
+  color: #24AE46;
+}
+.my-money .moneyNum text {
+  font-size: 75rpx;
+}
+.my-money .detail {
+  font-size: 28rpx;
+  color: #24AE46;
+  font-weight: 300;
+  position: absolute;
+  right: 10rpx;
+  top: 0;
+}
+
+.total {
+  margin: 40rpx 0 26rpx;
+  box-shadow: 0 1px 9px 0 rgba(0,0,0,0.10);
+  padding: 10rpx;
+}
+.total .total-calc {
+  padding: 20rpx 50rpx;
+  color: #9b9b9b;
+  font-size: 28rpx;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+.total-calc .num {
+  width: 150rpx;
+  margin: 0 auto;
+  text-align: center;
+  color: #24AE46;
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+  /* border: 1px solid red; */
+}
+.total-calc .symbol {
+  font-size: 36rpx;
+}
+.total .total-tip {
+  border-top: 1px dashed #ccc;
+  text-align: center;
+  color: #24AE46;
+  font-size: 28rpx;
+  padding: 15rpx;
+  margin-top: 10rpx;
+}
+
+.choose-pay {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.choose-pay view {
+  width: 28vw;
+  border: 1px solid #bfbfbf;
+  color: #9b9b9b;
+  border-radius: 100px;
+  font-size: 28rpx;
+  text-align: center;
+  padding: 20rpx 0;
+  margin: 1.5vw 0;
+  margin-right: 5vw;
+  box-sizing: border-box;
+}
+.choose-pay view:nth-of-type(3n) {
+  margin-right: 0;
+}
+.choose-pay .active {
+  border: 1px solid #24AE46;
+  color: #24AE46;
+}
+
+.pay-type {
+  border-top: 2px solid #ececec;
+  border-bottom: 2px solid #ececec;
+  margin: 30rpx 0 10rpx;
+  padding: 25rpx 15rpx;
+  font-size: 32rpx;
+  display: flex;
+  position: relative;
+}
+.pay-type image:first-of-type {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 15rpx;
+  margin-top: 6rpx;
+}
+.pay-type image:last-of-type {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 0;
+  top: 25rpx;
+}
+.agree {
+  color: #9a9a9a;
+  font-size: 24rpx;
+  text-align: center;
+  font-weight: 300;
+}
+.agree text {
+  color: #009fe4;
+}
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 50vw;
+  font-weight: 100;
+  margin-top: 175rpx;
+  color: #fff;
+  font-size: 32rpx;
+}

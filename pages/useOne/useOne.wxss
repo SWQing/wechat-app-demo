@@ -1,0 +1,138 @@
+.container {
+  height: 100vh;
+  padding: 0 20rpx;
+}
+.state {
+  padding: 30rpx 50rpx;
+}
+.state-message {
+  border: 1px solid #24AE46;
+  border-radius: 15px;
+  font-size: 30rpx;
+  color: #333133;
+}
+.state-message > view {
+  margin: 20rpx 30rpx;
+}
+.state-message text {
+  font-size: 38rpx;
+  color: #24AE46;
+}
+
+.explain {
+  background-color: #f8f9fa;
+}
+.explain-one {
+  border-bottom: 1px solid #ececec;
+  padding: 20rpx 50rpx 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.explain-one .picture {
+  width: 9.54vw;
+  height: 18vw;
+  margin-top: 20rpx;
+  margin-left: 80rpx;
+}
+.explain .picture image {
+  width: 100%;
+  height: 100%;
+}
+.explain-one .explain-text {
+  width: 50vw;
+  height: 20vw;
+  font-size: 26rpx;
+  color: #333133;
+  margin-left: 60rpx;
+}
+.explain-two {
+  font-size: 24rpx;
+  color: #9b9b9b;
+  padding: 20rpx 28rpx;
+  border-radius: 5px;
+  font-weight: 300;
+}
+
+.charge-mode {
+  padding: 30rpx 10rpx 10rpx;
+  border-bottom: 1px solid #ececec;
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333133;
+  padding-left: 10rpx;
+}
+.dot {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #24AE46;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+.charge-mode .way {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-around;
+}
+.charge-mode .way view {
+  width: 22vw;
+  background-color: #eee;
+  font-size: 26rpx;
+  color: #333133;
+  border: 1px solid transparent;
+  padding: 8rpx 0;
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+}
+.charge-mode .way .active {
+  background-color: #fff;
+  border: 1px solid #24AE46;
+}
+.charge-mode .way .default {
+  background-color: #eee;
+  border: 1px solid transparent;
+}
+
+.cash-pledge {
+  padding: 20rpx 10rpx 15rpx;
+}
+.total {
+  padding-left: 16vw;
+}
+.total text:first-child {
+  font-size: 34rpx;
+  color: #24AE46;
+}
+.total text:last-child {
+  font-size: 22rpx;
+  color: #9b9b9b;
+  font-weight: 200;
+}
+.agree {
+  margin-top: 50rpx;
+  font-size: 26rpx;
+  color: #888;
+  border-top: 1px solid #ececec; 
+  padding: 20rpx 15rpx;
+}
+.agree checkbox {
+  transform: scale(.6);
+  position: relative;
+  bottom: 2rpx;
+}
+.agree text {
+  color: red;
+}
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 50vw;
+  font-weight: 100;
+  margin-top: 70rpx;
+  color: #fff;
+  font-size: 32rpx;
+}

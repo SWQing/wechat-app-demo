@@ -1,0 +1,36 @@
+.container {
+  padding: 30rpx 15rpx;
+}
+.bill-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14rpx 30rpx;
+  box-shadow: 0 1px 9px 0 rgba(0,0,0,0.10);
+  border-radius: 3px;
+  margin-bottom: 32rpx;
+}
+.bill-list .icon image {
+  width: 65rpx;
+  height: 65rpx;
+}
+.bill-list .order {
+  /* margin-left: -40rpx; */
+  width: 55vw;
+}
+.bill-list .order .orderId {
+  color: #333133;
+  font-size: 28rpx;
+}
+.bill-list .order .orderTime {
+  font-size: 24rpx;
+  color: #9b9b9b;
+}
+.bill-list .order .orderTime text {
+  margin-right: 20rpx;
+}
+.bill-list .price {
+  color: #24AE46;
+  font-size: 35rpx;
+  width: 20vw;
+}

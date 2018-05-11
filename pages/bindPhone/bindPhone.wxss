@@ -1,0 +1,80 @@
+.container {
+  height: 100vh;
+  position: relative;
+}
+.model-phone {
+  width: 82vw;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20rpx 10rpx;
+  /* box-shadow: 0 1px 10px 0 #ECECEC; */
+  text-align: center;
+  position: absolute;
+  top: 15vh;
+  left: 9vw;
+  z-index: 11;
+  box-sizing: border-box;
+}
+.logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0 auto;
+  margin-bottom: 10vw;
+}
+.logo image {
+  width: 100%;
+  height: 100%;
+}
+.model-phone .phone-title {
+  font-size: 34rpx;
+  color: #333133;
+  margin: 10rpx 0 70rpx;
+}
+.model-phone input {
+  background-color: #eee;
+  border-radius: 100px;
+  margin: 22rpx 0;
+  text-align: left;
+  padding: 14rpx 40rpx;
+  font-size: 28rpx;
+  color: #9b9b9b;
+  font-weight: 300;
+}
+.model-phone button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 50vw;
+  font-weight: 100;
+  margin-top: 70rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.model-phone .captcha {
+  position: relative;
+}
+.model-phone .getCaptcha {
+  border-left: 1px solid #979797;
+  font-size: 28rpx;
+  color: #35ADB5;
+  font-weight: 300;
+  width: 200rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 18rpx;
+  z-index: 999;
+}
+.agree {
+  margin-top: 50rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+.agree checkbox {
+  transform: scale(.6);
+  position: relative;
+  bottom: 2rpx;
+}
+.agree text {
+  color: red;
+}

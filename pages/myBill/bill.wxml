@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='bill-list' wx:for='{{order}}' wx:key>
+    <view class='icon'>
+      <image wx:if='{{item.amount >= 0}}' src='../img/bill/income.png'></image>
+      <image wx:else='{{item.amount < 0}}' src='../img/bill/expend.png'></image>
+    </view>
+    <view class='order'>
+      <view class='orderId'>时间：{{item.time}}</view>
+      <view class='orderTime'>
+        <text>{{item.memo}}</text>
+      </view>
+    </view>
+    <view class='price' wx:if='{{item.amount >= 0}}'>+{{item.amount}}元</view>
+    <view class='price' wx:else='{{item.amount < 0}}'>{{item.amount}}元</view>
+  </view>
+</view>

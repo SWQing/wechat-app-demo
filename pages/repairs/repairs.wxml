@@ -1,0 +1,25 @@
+<view class='container'>
+  <form bindsubmit='formsubmit'>
+    <view class='coding'>
+      <input name='code' value='{{code}}' placeholder='扫描二维码或手动输入编码'></input>
+      <view bindtap='scanCode'><image src='../img/repairs/repairs_scan@2x.png' ></image></view>
+    </view>
+    <view class='fault-type'>
+      <view class='title'>- 请选择报障类型 -</view>
+      <view  class='fault-items'>
+        <view wx:for='{{faultItems}}' wx:key id='{{index}}' data-selected='{{item.selected}}' bindtap='activeItem' class="{{faultItems[index].selected?'active':''}}">{{item.content}}</view>
+      </view>
+    </view>
+    <view class='fault-add'>
+      <textarea name='content' placeholder='问题补充描述（最多输入100字）' placeholder-style='font-size: 24rpx; color: #bfbfbf;' auto-height></textarea>
+    </view>
+    <view class='uploadImg'>
+      <view class='tip'>(点击上传图片，最多3张)</view>
+      <view class='imgItems'>
+        <image wx:for='{{imgUrls}}' wx:key src='{{item}}' mode='aspectFit' bindtap='showImg' id='{{index}}'></image>
+        <view class='chooseImg' bindtap='chooseImg'>+</view>
+      </view>
+    </view>
+    <button form-type='submit'>确认报修</button>
+  </form>
+</view>

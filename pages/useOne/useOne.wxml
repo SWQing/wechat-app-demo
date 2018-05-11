@@ -1,0 +1,56 @@
+<view class='container'>
+  <!-- 使用状态 -->
+  <view class='state'>
+    <view class='state-message'>
+      <view>本次电池剩余电量为：<text class='electricity'>{{electricity}}%</text></view>
+    </view>
+  </view>
+  <!-- 电池说明 -->
+  <view class='explain'>
+    <view class='explain-one'>
+      <view class='picture'>
+        <image src='../img/userOne/picture.png'></image>
+      </view>
+      <view class='explain-text'>
+        <view>机身尺寸：{{message.size}}</view>
+        <view>电源输入：{{message.input}}</view>
+        <view>电池容量：{{message.capacity}}</view>
+        <view>充电输出：{{message.output}}</view>
+        <view>设备编号：{{message.uid}}</view>
+      </view>
+    </view>
+    <view class='explain-two'>
+      <text>{{protocol}}</text>
+    </view>
+  </view>
+  <!-- 计费方式 -->
+  <view class='charge-mode'>
+    <view class='title'>
+      <view class='dot'></view>
+      <view>计费方式</view>
+    </view>
+    <view class='way'>
+      <view wx:for='{{chargeRule}}' id='{{item.chargeId}}' class="{{activeNum == item.chargeId ? 'active' : ''}}" bindtap='selected'>{{item.charge}}</view>
+    </view>
+  </view>
+  <!-- 押金 -->
+  <view class='cash-pledge'>
+    <view class='title'>
+      <view class='dot'></view>
+      <view class='title'>押金</view>
+    </view>
+  </view>
+  <view class='total'>
+    <text>{{deposit}}元/个</text>
+    <text>（系统将在归还时结算）</text>
+  </view>
+  <view class='agree'>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox">
+        <checkbox checked="{{isChecked}}"/>点击租用，即表示已阅读并同意 
+      </label>
+      <text catchtap='protocol'>《租用协议》</text>
+  </checkbox-group>
+  </view>
+  <button bindtap='toUseSuccess'>确认租用</button>
+</view>

@@ -1,0 +1,78 @@
+
+<view class='container'>
+  <!-- tab -->
+  <view class='tab'>
+    <view class="{{selected[0]?'active':'default'}}" bindtap='tabSelected1'>未激活</view>
+    <view class="{{selected[1]?'active':'default'}}" bindtap='tabSelected2'>未归还
+</view>
+  <view class="{{selected[2]?'active':'default'}}" bindtap='tabSelected3'>已完成
+</view>
+  </view>
+  <view class='line'></view>
+  <view class='line2'></view>
+  <!-- 订单总数以及总收入 -->
+  <view class='all'>
+    <view class='all-date'>{{date}}</view>
+    <view class='all-content'>
+      <view>收入 <text>￥{{income}}</text></view>
+      <view>总订单数：<text>{{orderNum}}</text></view>
+    </view>
+    <view class='calendar'>
+      <picker mode="date" fields='month' value="{{date}}" start="2017-02" end="{{end}}" bindchange="bindDateChange">
+        <image src='../img/index/date@2x.png'></image>
+      </picker>
+    </view>
+  </view>
+  <!-- 去激活 list -->
+  <view class='using' wx:if='{{selected[0]}}' wx:for='{{unActive}}' wx:key bindtap='toActive' id='{{item.sn}}'>
+    <view class='using-items'>
+      <view class='message'>
+        <view class='orderId'>
+          <image src='../img/userOne/picture.png'></image>
+          <view>订单编号：<text>{{item.sn}}</text></view>
+        </view>
+        <view class='use-time'>租用时间：{{item.rentDate}}</view>
+        <view class='facilityId'>设备编号：<text>{{item.uid}}</text></view>
+      </view>
+      <view class='electric'>
+        <view class='toActive'>去激活</view>
+      </view>
+      <view class='arrows'><image src='../img/myCenter/arrows.jpg'></image></view>
+    </view>
+  </view>
+  <!-- 未归还 list -->
+  <view class='using' wx:if='{{selected[1]}}' wx:for='{{unReturn}}' wx:key bindtap='toReturn' id='{{item.sn}}'>
+    <view class='using-items'>
+      <view class='message'>
+        <view class='orderId'>
+          <image src='../img/userOne/picture.png'></image>
+          <view>订单编号：<text>{{item.sn}}</text></view>
+        </view>
+        <view class='use-time'>租用时间：{{item.rentDate}}</view>
+        <view class='facilityId'>设备编号：<text>{{item.uid}}</text></view>
+      </view>
+      <view class='electric'>
+        <view class='toActive'>确认归还</view>
+      </view>
+      <view class='arrows'><image src='../img/myCenter/arrows.jpg'></image></view>
+    </view>
+  </view>
+  <!-- 已完成 list -->
+  <view class='using' wx:if='{{selected[2]}}' wx:for='{{used}}' wx:key bindtap='toFinish' id='{{item.sn}}'>
+    <view class='using-items'>
+      <view class='message'>
+        <view class='orderId'>
+          <image src='../img/userOne/picture.png'></image>
+          <view>订单编号：<text>{{item.sn}}</text></view>
+        </view>
+        <view class='use-time'>租用时间：{{item.rentDate}}~{{item.revertDate}}</view>
+        <view class='facilityId'>设备编号：<text>{{item.uid}}</text></view>
+      </view>
+      <view class='electric'>
+        <view>订单总价</view>
+        <view>{{item.amount}}元</view>
+      </view>
+      <view class='arrows'><image src='../img/myCenter/arrows.jpg'></image></view>
+    </view>
+  </view>
+</view>

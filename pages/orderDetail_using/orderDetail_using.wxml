@@ -1,0 +1,31 @@
+<view class='container'>
+  <!-- 使用状态 -->
+  <view class='state'>
+    <view class='state-message'>
+      <view>本次电池剩余电量为：<text class='electricity'>{{electricity}}%</text></view>
+    </view>
+  </view>
+  <!-- 电池说明 -->
+  <view class='explain'>
+    <view class='explain-one'>
+      <view class='picture'>
+        <image src='../img/userOne/picture.png'></image>
+      </view>
+      <view class='explain-text'>
+        <view>机身尺寸：{{facilityInfo.size}}</view>
+        <view>电源输入：{{facilityInfo.input}}</view>
+        <view>电池容量：{{facilityInfo.capacity}}</view>
+        <view>充电输出：{{facilityInfo.output}}</view>
+      </view>
+    </view>
+    <view class='explain-two'>
+      <view>订单编号：<text>{{orderMessage.orderId}}</text></view>
+      <view>租用时间：<text>{{orderMessage.time}}</text></view>
+      <view>设备编号：<text>{{orderMessage.facilityId}}</text></view>
+      <view>租用网点：<text>{{orderMessage.address}}</text></view>
+    </view>
+  </view>
+  <button wx:if='{{isActive}}' bindtap='stop' id="{{stop?'isStop':'isBegin'}}" disabled='{{isLock}}'>{{buttonText}}</button>
+  <view class='button' wx:else='{{!isActive}}' style='width: 60vw;font-size: 28rpx;'>订单未激活，请联系网点管理员</view>
+  <!-- <view class='fault' bindtap='fault'>申报故障，结束订单</view> -->
+</view>

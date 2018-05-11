@@ -1,0 +1,113 @@
+.container {
+  height: 100vw;
+  padding: 20rpx;
+}
+.time {
+  box-shadow: 0 1px 9px 0 rgba(0,0,0,0.10);
+  border-radius: 3px;
+  text-align: center;
+  margin: 20rpx 0;
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.time .time-start view:first-of-type {
+  font-size: 28rpx;
+  color: #333133;
+}
+.time .time-start view:last-of-type {
+  font-size: 20rpx;
+  color: #9b9b9b;
+  font-weight: 300;
+}
+.time .time-pending {
+  display: flex;
+  align-items: center;
+}
+.time .time-pending .outSite {
+  background: rgba(36,174,70,0.20);
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 50%;
+  margin: 0 6rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time .time-pending .inSite {
+  background: #24AE46;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+}
+.time .time-pending .middle {
+  transform: rotate(-90deg);
+  background: rgba(36,174,70,0.20);
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  margin: 0 6rpx;
+}
+
+.list-order {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 20rpx;
+}
+.list-order:nth-of-type(2) {
+  border-bottom: 1px dashed #ccc;
+}
+.list-order .list-order-title {
+  display: flex;
+  align-items: center;
+  padding: 15rpx 30rpx;
+  font-size: 24rpx;
+  color: #9b9b9b;
+  font-weight: 300;
+}
+.list-order .list-order-title image {
+  width: 25rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.list-order .list-order-content {
+  font-size: 28rpx;
+  color: #4a4a4a;
+  margin-left: 76rpx;
+}
+.list-order .list-order-content view {
+  margin: 5rpx 0;
+}
+.allPrice {
+  text-align: right;
+  padding: 0 25rpx;
+  font-size: 28rpx;
+  color: #4a4a4a;
+}
+.allPrice text {
+  font-size: 42rpx;
+  color: #24AE46;
+}
+.list-order .list-order-title .account {
+  width: 38rpx;
+  height: 35rpx;
+  margin-left: -8rpx;
+}
+
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 40vw;
+  font-weight: 100;
+  margin-top: 160rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.fault {
+  text-align:center;
+  font-size:22rpx;
+  color:#008B00;
+  margin-top:25rpx;
+  text-decoration:underline;
+}

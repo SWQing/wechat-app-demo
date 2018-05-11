@@ -1,0 +1,45 @@
+<view class='container'>
+  <!-- tab -->
+  <view class='tab'>
+    <view class="{{selected[0]?'active':'default'}}" bindtap='tabSelected1'>正在使用</view>
+    <view class="{{selected[1]?'active':'default'}}" bindtap='tabSelected2'>已完成
+</view>
+  </view>
+  <view class='line'></view>
+  <!-- 正在使用items -->
+  <view class='using' wx:if='{{selected[0]}}' bindtap='toUsing' wx:for='{{using}}' wx:key id='{{item.sn}}'>
+    <view class='using-items'>
+      <view class='message'>
+        <view class='orderId'>
+          <image src='../img/userOne/picture.png'></image>
+          <view>订单编号：<text>{{item.sn}}</text></view>
+        </view>
+        <view class='use-time'>租用时间：{{item.rentDate}}</view>
+        <view class='facilityId'>设备编号：<text>{{item.uid}}</text></view>
+      </view>
+      <view class='electric'>
+        <view>剩余电量</view>
+        <view>{{item.electricity}}%</view>
+      </view>
+      <view class='arrows'><image src='../img/myCenter/arrows.jpg'></image></view>
+    </view>
+  </view>
+  <!-- 已完成items -->
+  <view class='using' wx:if='{{selected[1]}}' wx:for='{{used}}' wx:key bindtap='toFinish' id='{{item.sn}}'>
+    <view class='using-items'>
+      <view class='message'>
+        <view class='orderId'>
+          <image src='../img/userOne/picture.png'></image>
+          <view>订单编号：<text>{{item.sn}}</text></view>
+        </view>
+        <view class='use-time'>租用时间：{{item.rentDate}}~{{item.revertDate}}</view>
+        <view class='facilityId'>设备编号：<text>{{item.uid}}</text></view>
+      </view>
+      <view class='electric'>
+        <view>订单总价</view>
+        <view>{{item.amount}}元</view>
+      </view>
+      <view class='arrows'><image src='../img/myCenter/arrows.jpg'></image></view>
+    </view>
+  </view>
+</view>

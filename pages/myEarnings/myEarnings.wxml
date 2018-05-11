@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='myEarnings'>
+    <view class='earnings'>
+      我的收益：<text>{{myEarnings}}元</text>
+    </view>
+    <view class='bill' bindtap='toBill'>流水账单</view>
+  </view>
+  <view class='withdraw'>
+    <form bindsubmit='formSubmit'>
+      <view class='title'>提现到微信</view>
+      <view class='content'>
+        <input type='digit' name='withdraw' value='{{inputValue}}' bindinput='bindinput'></input>
+        <view>￥</view>
+        <view bindtap='all'>全部提现</view>
+      </view>
+      <button form-type='submit'>立即提现</button>
+    </form>
+  </view>
+</view>

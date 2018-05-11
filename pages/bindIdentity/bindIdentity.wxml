@@ -1,0 +1,25 @@
+<view class='container'>
+  <!-- 绑定手机号模态框 -->
+  <view class='model-phone'>
+    <view class='logo'>
+      <image src='../img/index/logo.png'></image>
+    </view>
+    <form>
+      <view>
+        <input value='{{name}}' placeholder='请输入姓名' bindblur='changeName'></input>
+      </view>
+      <view class='captcha'>
+        <input type='idcard' maxlength='18' value='{{idNumber}}' placeholder='请输入身份证号' bindblur='changeIdNumber'></input>
+      </view>
+      <button bindtap='submit'>认证</button>
+      <!-- <view class='agree'>
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox checked="{{item.checked}}"/>点击提交，即表示已阅读并同意 
+          </label>
+          <text catchtap='protocol'>《用户协议》</text>
+      </checkbox-group>
+      </view> -->
+    </form>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class='container'>
+  <!-- 提示信息 -->
+  <view class='tip'>
+    <view class='tip-icon'><icon type='success' size='40' color='#24AE46'></icon></view>
+    <view class='tip-text'>您已成功租用1个电池</view>
+  </view>
+  <!-- 使用状态 -->
+  <view class='state'>
+    <view class='state-message'>
+      <view>本次电池剩余电量为：<text class='electricity'>{{electricity}}%</text></view>
+    </view>
+  </view>
+  <!-- 计费规则 -->
+  <view class='rule'>
+    <view class='rule-content'>计费规则：<text>{{charge}}</text></view>
+    <view class='rule-tip'>请您在使用完后及时归还</view>
+  </view>
+  <!-- 确定按钮 -->
+  <button bindtap='returnIndex'>确定</button>
+</view>

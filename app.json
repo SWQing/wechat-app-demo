@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/bindPhone/bindPhone",
+    "pages/index/index",
+    "pages/useGuide/useGuide",
+    "pages/bindIdentity/bindIdentity",
+    "pages/myEarnings/myEarnings",
+    "pages/netBill/bill",
+    "pages/myBill/bill",
+    "pages/repairs/repairs",
+    "pages/useSuccess/useSuccess",
+    "pages/myCenter/myCenter",
+    "pages/myOrder/myOrder",
+    "pages/netMessage/netMessage",
+    "pages/netMessage_my/netMessage",
+    "pages/orderDetail_using/orderDetail_using",
+    "pages/orderDetail_finished/orderDetail_finished",
+    "pages/orderDetail_inactive/orderDetail_inactive",
+    "pages/orderDetail_return/orderDetail_return",
+    "pages/netOrder/netOrder",
+    "pages/useOne/useOne",
+    "pages/pay/pay",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#24ae46",
+    "navigationBarTitleText": "中天鸿锂",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,100 @@
+.container {
+  height: 100vh;
+  padding: 5vw;
+}
+.coding input {
+  border: 1px solid #BFBFBF;
+  border-radius: 100px;
+  font-size: 28rpx;
+  font-weight: 300;
+  padding: 17rpx 30rpx;
+  color: #9b9b9b;
+  position: relative;
+}
+.coding view {
+  position: absolute;
+  width: 45rpx;
+  height: 45rpx;
+  right: 80rpx;
+  top: 60rpx;
+  z-index: 999;
+}
+.coding image {
+  width: 100%;
+  height: 100%;
+}
+.fault-type {
+  margin-top: 50rpx;
+}
+.fault-type .title {
+  text-align: center;
+  font-size: 34rpx;
+  color: #24AE46;
+  font-weight: 300;
+}
+.fault-type .title {
+  margin: 20rpx 0;
+}
+.fault-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fault-items view {
+  width: 28vw;
+  text-align: center;
+  color: #BFBFBF;
+  font-size: 28rpx;
+  border: 1px solid #BFBFBF;
+  border-radius: 100px;
+  margin: 1.5vw 0;
+  padding: 20rpx 0;
+}
+.fault-items .active {
+  color: #24AE46;
+  border: 1px solid #24AE46;
+}
+.fault-add textarea {
+  background-color: #f8f9fa;
+  width: 90vw;
+  font-size: 28rpx;
+  min-height: 28vw;
+  padding: 25rpx;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 25rpx;
+}
+.uploadImg .tip {
+  font-size: 24rpx;
+  color: #BFBFBF;
+  margin: 18rpx 0;
+  font-weight: 300;
+}
+.chooseImg {
+  width: 110rpx;
+  height: 110rpx;
+  border: 2px dashed #BFBFBF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #BFBFBF;
+  font-size: 50rpx;
+}
+.imgItems {
+  display: flex;
+}
+.imgItems image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 30rpx;
+}
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 52vw;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 200;
+  margin-top: 120rpx;
+}

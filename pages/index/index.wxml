@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="container">
+<!-- tab -->
+  <view class='tab'>
+    <view class="{{selected[0]?'active':'default'}}" bindtap='tabSelected1'>
+      <image src='../img/index/cabinet_2x.png'></image>站点
+    </view>
+    <view class="{{selected[1]?'active':'default'}}" bindtap='tabSelected2'>
+      <image src='../img/index/battery142@2x.png'></image>电池
+    </view>
+  </view>
+  <view class='line'></view>
+  <!-- map -->
+  <view class='map'>
+    <map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 93vh;">
+    <!-- 信息框 -->
+    <cover-view wx:if='{{showMessage}}' class='message' id='{{activeMessage.cabinetId}}' bindtap='details'>
+      <cover-view class='message-avatar'>
+         <cover-image src='{{activeMessage.avatar}}'></cover-image> 
+      </cover-view>
+      <cover-view class='message-content'>
+        <cover-view class='message-name'>{{activeMessage.name}}</cover-view>
+        <cover-view class='message-time'>
+          <cover-image src='../img/index/time@2x.png'></cover-image>
+          <cover-view>{{activeMessage.time}}</cover-view>
+        </cover-view>
+        <cover-view class='message-address'>
+          <cover-image src='../img/index/position@2x.png'></cover-image>
+          <cover-view>{{activeMessage.address}}</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class='tel'>
+        <cover-image src='../img/netMessage/next@3x.png'></cover-image>
+      </cover-view>
+    </cover-view>
+    <!-- 头像 -->
+    <cover-view bindtap='userCenter' class='userAvatar'>
+      <cover-image src='{{userAvatar}}'></cover-image>
+    </cover-view>
+    <!-- 黑屏 -->
+    <cover-view wx:if='{{showParclose}}' class='parclose'></cover-view>
+    <!-- 获取信息失败模态框 -->
+    <cover-view wx:if='{{showModelErr}}' class='model-err'>
+      <cover-view class='err-title'>获取电池信息失败</cover-view>
+      <cover-view class='err-msg'>
+        <cover-image src='../img/index/errMsg@2x.png'></cover-image>
+        <cover-view>该电池已被报修多次</cover-view>
+        <cover-view>请尝试其他电池</cover-view>
+      </cover-view>
+      <cover-view class='button' bindtap='closeModel'>好的</cover-view>
+      <cover-view class='close'>
+        <cover-view class='close-line'></cover-view>
+        <cover-view bindtap='closeModel' class='close-btn'>×</cover-view>
+      </cover-view>
+    </cover-view>
+    </map>
+  </view>
+  <!-- 黑屏 -->
+  <view wx:if='{{showParclose}}' class='parclose'></view>
+</view>

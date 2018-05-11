@@ -1,0 +1,62 @@
+.container {
+  height: 100vh;
+}
+.tip {
+  text-align: center;
+  padding: 55rpx 0;
+}
+.tip-text {
+  color: #333133;
+  font-size: 32rpx;
+  margin: 16rpx;
+}
+.state {
+  padding: 30rpx 50rpx;
+}
+.state-message {
+  border: 1px solid #24AE46;
+  border-radius: 15px;
+  font-size: 30rpx;
+  color: #333133;
+}
+.state-message > view {
+  margin: 20rpx 30rpx;
+}
+.state-message text {
+  font-size: 38rpx;
+  color: #24AE46;
+}
+
+.rule {
+  text-align: center;
+}
+.rule .rule-content {
+  background-color: #eee;
+  font-size: 32rpx;
+  color: #9b9b9b;
+  width: 66vw;
+  margin: 0 auto;
+  border-radius: 100px;
+  padding: 10rpx;
+  font-weight: 300;
+}
+.rule .rule-content text {
+  color: #24AE46;
+  font-weight: 400;
+}
+.rule .rule-tip {
+  font-size: 25rpx;
+  color: #A5A5A5;
+  padding: 15rpx;
+  font-weight: 300;
+}
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 52vw;
+  margin-top: 160rpx;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 100;
+}

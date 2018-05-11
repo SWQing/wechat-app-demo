@@ -1,0 +1,50 @@
+<view class='container'>
+  <!-- 时间段 -->
+  <view class='time'>
+    <view class='time-start'>
+      <view>{{startTime.day}}</view>
+      <view>{{startTime.hour}}</view>
+    </view>
+    <view class='time-pending'>
+      <view class='outSite'>
+        <view class='inSite'></view>
+      </view>
+      <view class='middle' wx:for="......." wx:key></view>
+      <view class='outSite'>
+        <view class='inSite'></view>
+      </view>
+    </view>
+    <view class='time-start'>
+      <view>{{endTime.day}}</view>
+      <view>{{endTime.hour}}</view>
+    </view>
+  </view>
+  <!-- 订单、结算 -->
+  <view class='list'>
+    <view class='list-order'>
+      <view class='list-order-title'>
+        <image src='../img/userOne/picture.png'></image>
+        <view>订单</view>
+      </view>
+      <view class='list-order-content'>
+        <view>设备编号：{{order.uid}}</view>
+        <view>租用网点：{{order.address}}</view>
+        <view>订单编号：{{order.sn}}</view>
+      </view>
+    </view>
+    <view class='list-order'>
+      <view class='list-order-title'>
+        <image class='account' src='../img/orderDetail/account.png'></image>
+        <view>结算</view>
+      </view>
+      <view class='list-order-content'>
+        <view>使用时长：{{account.useTime}}</view>
+        <view>计费时长：{{account.payTime}}天</view>
+        <view>计费规则：{{account.payRule}}</view>
+      </view>
+    </view>
+    <view class='allPrice'>共计：<text>{{totalPrice}}元</text></view>
+  </view>
+  <button bindtap='return'>确认归还</button>
+  <!-- <view class='fault' bindtap='fault'>申报故障，结束订单</view> -->
+</view>

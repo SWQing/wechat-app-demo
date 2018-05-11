@@ -1,0 +1,30 @@
+<view class='container'>
+  <!-- 上半部分  -->
+  <view class='message'>
+    <view class='bg'>
+      <!-- 余额  -->
+      <view class='balance' bindtap='toPay'>
+        <view>余额</view>
+        <view><text class='symbol'>￥</text>{{money}}</view>
+      </view>
+      <!-- 头像、名字  -->
+      <view class='message-basic'>
+         <view><image src='{{userInfo.avatar}}'></image></view> 
+        <view>{{userInfo.name}}</view>
+      </view>
+      <!-- 优惠券 -->
+      <view class='discount'>
+        <view>金币</view>
+        <view>{{discount}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 下半部分  -->
+  <view class='item'>
+    <view wx:for='{{items}}' wx:key id='{{index}}' bindtap='jump'>
+      <image src='{{item.imgUrl}}'></image>
+      <text>{{item.text}}</text>
+      <image src='../img/netMessage/next@2x.png'></image>
+    </view>
+  </view>
+</view>

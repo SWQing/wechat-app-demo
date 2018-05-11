@@ -1,0 +1,74 @@
+.container {
+  padding: 30rpx 20rpx;
+}
+.myEarnings .earnings {
+  background: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  font-size: 30rpx;
+  color: #fff;
+  height: 150rpx;
+  box-sizing: border-box;
+  line-height: 150rpx; 
+  padding-left: 50rpx;
+  font-weight: 200;
+}
+.myEarnings text {
+  font-size: 46rpx;
+  margin-left: 90rpx;
+  font-weight: 300;
+}
+.myEarnings .bill {
+  text-align: right;
+  margin: 30rpx;
+  font-size: 32rpx;
+  color: #24AE46;
+  font-weight: 300;
+}
+.withdraw {
+  box-shadow: 0 1px 9px 0 rgba(0,0,0,0.10);
+  border-radius: 3px;
+  padding: 25rpx 40rpx;
+  font-weight: 300;
+}
+.withdraw .title {
+  color: #9b9b9b;
+  font-size: 32rpx;
+}
+.withdraw .content {
+  position: relative;
+}
+.withdraw .content input {
+  border-bottom: 2px solid rgba(0, 180, 0, 0.2); 
+  height: 120rpx; 
+  margin-top: 40rpx; 
+  padding: 30rpx 100rpx;  
+  /* padding-top: 0;   */
+  font-size: 90rpx; 
+  font-weight: bold;
+  color: #333133;
+
+}
+.withdraw .content view:nth-of-type(1) {
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+  font-size: 50rpx;
+  color: #24AE46;
+}
+.withdraw .content view:nth-of-type(2) {
+  font-size: 32rpx;
+  color: #24AE46;
+  text-align: right;
+  padding-top: 10rpx;
+}
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 50vw;
+  font-weight: 100;
+  margin-top: 50rpx;
+  color: #fff;
+  font-size: 32rpx;
+}

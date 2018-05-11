@@ -1,0 +1,40 @@
+<view class='container'>
+  <!-- 我的余额 -->
+  <view class='my-money'>
+    <view class='title'>我的余额</view>
+    <view class='moneyNum'>￥<text>{{money}}</text></view>
+    <view class='detail' bindtap='detail'>明细</view>
+  </view>
+  <!-- 小计 -->
+  <view class='total'>
+    <view class='total-calc'>
+      <view class='pay'>
+        <view class='num'>{{resultContent[activeNum].recharge}}</view>
+        <view>充值</view>
+      </view>
+      <view class='symbol'>+</view>
+      <view class='give'>
+        <view class='num'>{{resultContent[activeNum].gift}}</view>
+        <view>返赠金币</view>
+      </view>
+      <view class='symbol'>=</view>
+      <view class='all'>
+        <view class='num'>{{resultContent[activeNum].recharge + resultContent[activeNum].gift}}</view>
+        <view>到账</view>
+      </view>
+    </view>
+    <view class='total-tip'>充{{resultContent[activeNum].recharge}}送{{resultContent[activeNum].gift}}，多充多送</view>
+  </view>
+  <!-- 选择金额 -->
+  <view class='choose-pay'>
+    <view wx:for='{{resultContent}}' wx:key bindtap='choosePayNum' id='{{index}}' data-id='{{item.id}}' class="{{activeNum == index?'active':''}}">{{item.recharge}}元</view>
+  </view>
+  <!-- 支付方式 -->
+  <view class='pay-type'>
+    <image src='../img/pay/wxPay@2x.png'></image>
+    <view>微信支付</view>
+    <image src='../img/pay/selected.png'></image>
+  </view>
+  <view class='agree'>点击立即充值，即表示同意<text>充值协议</text></view>
+  <button bindtap='pay'>立即充值</button>
+</view>

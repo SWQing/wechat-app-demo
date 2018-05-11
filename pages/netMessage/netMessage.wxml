@@ -1,0 +1,18 @@
+<view class='container'>
+  <!-- 网点图 -->
+  <view class='logo'>
+    <image mode='aspectFill' src='{{message.imgUrl}}'></image>
+    <view class='name'>{{message.name}}</view>
+  </view>
+  <!-- 网点信息 -->
+  <view class='message'>
+    <view class='address'><text class='label'>地址：</text><text>{{message.address}}</text></view>
+    <view class='phone' wx:for='{{message.tel}}' wx:key>
+      <view wx:if='{{index == 0}}'><text class='label'>电话：</text><text>{{item}}</text></view>
+      <view wx:else><text class='label'></text><text>{{item}}</text></view>
+      <view class='line'></view>
+      <image catchtap='callPhone' id='{{item}}' src='../img/index/tel.png'></image>
+    </view>
+    <view class='people'>负责人：<text>{{message.people}}</text></view>
+  </view>
+</view>

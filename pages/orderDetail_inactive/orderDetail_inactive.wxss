@@ -1,0 +1,75 @@
+.container {
+  height: 100vh;
+  padding: 0 20rpx;
+}
+.state {
+  margin-bottom: 18rpx;
+  padding: 30rpx 50rpx;
+}
+.state-message {
+  border: 1px solid #35ADB5;
+  border-radius: 15px;
+  font-size: 30rpx;
+  color: #333133;
+}
+.state-message > view {
+  margin: 20rpx 30rpx;
+}
+.state-message text {
+  font-size: 38rpx;
+  color: #24AE46;
+}
+
+.explain {
+  background-color: #f8f9fa;
+}
+.explain-one {
+  border-bottom: 1px solid #ececec;
+  padding: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.explain-one .picture {
+  width: 9.54vw;
+  height: 18vw;
+  margin-left: 80rpx;
+}
+.explain .picture image {
+  width: 100%;
+  height: 100%;
+}
+.explain-one .explain-text {
+  width: 50vw;
+  height: 20vw;
+  font-size: 26rpx;
+  color: #333133;
+  margin-left: 60rpx;
+}
+.explain-two {
+  font-size: 28rpx;
+  color: #333133;
+  padding: 25rpx 28rpx;
+  border-radius: 5px;
+}
+.explain-two view {
+  padding: 6rpx 20rpx;
+}
+
+
+button {
+  background-color: #24AE46;
+  box-shadow: 0 1px 10px 0 rgba(53,173,181,0.47);
+  border-radius: 100px;
+  width: 40vw;
+  font-weight: 100;
+  margin-top: 120rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+.fault {
+  text-align:center;
+  font-size:22rpx;
+  color:#008B00;
+  margin-top:25rpx;
+  text-decoration:underline;
+}

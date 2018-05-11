@@ -1,0 +1,27 @@
+<view class='container'>
+  <!-- 绑定手机号模态框 -->
+  <view class='model-phone'>
+    <view class='logo'>
+      <image src='../img/index/logo.png'></image>
+    </view>
+    <form>
+    
+      <view>
+        <input type='number' value='{{phone}}' placeholder='请输入手机号' bindblur='changePhone'></input>
+      </view>
+      <view class='captcha'>
+        <input value='{{captcha}}' placeholder='请输入验证码' bindblur='changeCaptcha'></input>
+        <view class='getCaptcha' bindtap='getCaptcha'>{{getCaptchaText}}</view>
+      </view>
+      <button bindtap='submit'>提交</button>
+      <view class='agree'>
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox">
+            <checkbox checked="{{item.checked}}"/>点击提交，即表示已阅读并同意 
+          </label>
+          <text catchtap='protocol'>《用户协议》</text>
+      </checkbox-group>
+      </view>
+    </form>
+  </view>
+</view>
